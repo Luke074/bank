@@ -1,9 +1,15 @@
 <nav>
     <div class="top-header">
         <img [src]="user.image" onerror="this.src='../../assets/icons/user-icon.svg'" alt="">
+        <span>{{user.name}} {{user.surname}}</span>
     </div>
     <div class="center-header">
-
+        <div *ngFor="let icon of links" class="card-list">
+            <a [href]="icon.link">
+                <img [src]="icon.img" [alt]="icon.name" onerror="this.src = '../../../assets/icons/user-icon.svg'">
+                <span>{{icon.name}}</span>
+            </a>
+        </div>
     </div>
     <div class="bot-header">
 
