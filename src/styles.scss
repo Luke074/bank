@@ -12,3 +12,18 @@ body {
     box-sizing: border-box;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    min-height: 10px;
+    height: auto;
+    flex-wrap: wrap;
+}
+
+.margin-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
